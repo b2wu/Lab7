@@ -14,6 +14,7 @@ jobs:
             recurse: true
             output_dir: ./jsdocs
             
+           
             
         - name: config b2wu
           run: git config --global user.name "QE" 
@@ -28,3 +29,8 @@ jobs:
           run: git commit -m 'jsodcs updatge'
         - name: push to repor
           run: git push origin main
+
+        - name: config run
+          run: cd ./jsdocs
+        - name: config run
+          run: ls
