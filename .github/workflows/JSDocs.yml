@@ -31,6 +31,5 @@ jobs:
           run: git push origin main
 
         - name: config run
-          run: cd ./jsdocs
-        - name: config run
-          run: ls
+          run: cd ./jsdocs | ls
+ 
