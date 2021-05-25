@@ -17,12 +17,14 @@ jobs:
         - name: branch check 
           run: git branch
           
+        
         - name: config b2wu
           run: git config --global user.name "QE" 
         - name: config email
           run: git config --global user.email "b2wu@ucsd.edu"
           
-          
+        - name: pull
+          run: git pull origin HEAD
         - name: upload to repor
           working-directory: ./
           run: git add jsdocs/
