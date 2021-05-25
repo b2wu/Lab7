@@ -32,7 +32,7 @@ jobs:
         - name: commit to repor
           run: git commit -m 'jsodcs updatge'
         - name: push to repor
-          run: git push -f origin main
+          run: git push -f origin HEAD
 
         - name: config run
           working-directory: ./jsdocs
