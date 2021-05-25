@@ -14,8 +14,9 @@ jobs:
             recurse: true
             output_dir: ./jsdocs
             
-           
-            
+        - name: branch check 
+          run: git branch
+          
         - name: config b2wu
           run: git config --global user.name "QE" 
         - name: config email
