@@ -22,7 +22,8 @@ jobs:
           run: git config --global user.name "QE" 
         - name: config email
           run: git config --global user.email "b2wu@ucsd.edu"
-          
+        - name: show ref
+          run: git show-ref
         - name: pull
           run: git pull --allow-unrelated-histories origin HEAD
         - name: upload to repor
