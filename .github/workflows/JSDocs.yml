@@ -15,7 +15,7 @@ jobs:
             output_dir: ./jsdocs
             
         - name: fecth
-          run: git fetch orgin main
+          run: git fetch origin main
           
         - name: branch check 
           run: git branch
